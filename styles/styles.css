@@ -1,0 +1,332 @@
+@font-face {
+  font-family: "Christmas";
+  src: url("/assets/fonts/MountainsofChristmas-Bold.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Christmas";
+}
+
+body {
+  background-image: url("../assets/imgs/033869-150ppp.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: "Christmas";
+}
+
+.enunciado {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Christmas";
+  color: brown;
+  z-index: 50;
+  text-shadow: 2px 2px 4px rgba(13, 3, 3, 0.5);
+  font-weight: 900;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  font-family: "Christmas";
+  color: brown;
+  z-index: 50;
+  text-shadow: 2px 2px 4px rgba(13, 3, 3, 0.5);
+  background-color: wheat;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px gold;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    width: 50%;
+  }
+}
+
+.inventory-table-styles {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 20px auto;
+  color: brown;
+  z-index: 50;
+  text-shadow: 2px 2px 4px rgba(13, 3, 3, 0.5);
+  background-color: wheat;
+  box-shadow: 0 2px 4px gold;
+}
+
+.inventory-table-styles th,
+.inventory-table-styles td {
+  border: 1px solid rgba(0, 0, 0, 0.701);
+  padding: 8px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgb(13, 3, 3);
+  background-color: rgb(246, 196, 104);
+  box-shadow: 0 2px 4px gold;
+  font-size:30px
+}
+
+.inventory-table-styles th {
+  background-color: rgb(165, 120, 42);
+  color: rgb(241, 222, 16);
+  text-shadow: 2px 2px 4px rgba(13, 3, 3, 0.5);
+  background-color: brown;
+  opacity: 0.8;
+  box-shadow: 0 2px 4px gold;
+  
+}
+
+.inventory-table-styles td:hover {
+  background-color: brown;
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 4px rgba(248, 96, 96, 0.5);
+  box-shadow: 0 2px 4px gold;
+}
+
+/*Estilos del formulario*/
+.product-form-styles {
+  background-color: brown;
+  color: brown;
+  padding: 20px;
+  border: 1px solid gold;
+  border-radius: 5px;
+  margin: auto;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px gold;
+  width: 49%;
+  
+}
+
+@media (max-width: 768px) {
+  .product-form-styles {
+    padding: 10px;
+    margin: 10px;
+  }
+}
+
+/* Estilos para las etiquetas y campos de entrada */
+label {
+  text-align: center;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(13, 3, 3, 0.5);
+  background-color: wheat;
+  color: brown;
+  box-shadow: 0 2px 4px gold;
+  font-size:30px
+}
+::placeholder {
+  color: brown;
+}
+.divi {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+}
+.dividi {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  width: 49%;
+  margin: auto;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px !important;
+  border: 1px solid brown;
+  /* Borde con un tono más claro que el fondo */
+  border-radius: 3px;
+  color: brown;
+  /* Texto en color blanco para mayor contraste */
+  outline: none;
+  text-shadow: 2px 2px 4px rgba(13, 3, 3, 0.5);
+  background-color: rgb(250, 205, 116);
+  box-shadow: 0 2px 4px gold;
+  text-align: center;
+  font-size:30px !important
+}
+th,
+td::first-letter {
+  font-family: "Christmas";
+  font-size: 2rem;
+  color: gold;
+}
+.elevator {
+  margin: 0;
+}
+/* Estilos para el botón */
+button {
+  flex-direction: column;
+  background-color: #eb5552;
+  /* Color de fondo azul */
+  color: brown;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Christmas";
+  text-shadow: 2px 2px 4px rgba(13, 3, 3, 0.5);
+  background-color: rgb(245, 222, 179);
+  box-shadow: 0 2px 4px gold;
+  font-size:30px!important;
+}
+input:focus {
+  border: 2px solid #ffffff; /* Cambia el color del borde cuando está enfocado */
+  outline: #eb5552; /* Elimina el contorno predeterminado en algunos navegadores */
+}
+button:hover {
+  background-color: #fbd308;
+  /* Color de fondo azul más oscuro al pasar el cursor */
+}
+.escondido {
+  display: none;
+}
+i {
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: inset 0 -1px 1px rgb(254, 254, 254);
+  top: -10px;
+  animation: nieve linear infinite;
+}
+@keyframes nieve {
+  0% {
+    top: -10px;
+  }
+  100% {
+    top: calc(90vh + 40px);
+  }
+}
+
+.luces {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+.luces2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+@-webkit-keyframes lightswitch-f {
+  0% {
+    opacity: 100;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 100;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
+@keyframes lightswitch-f {
+  0% {
+    opacity: 100;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 100;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
+@-webkit-keyframes lightswitch-s {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 100;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 100;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes lightswitch-s {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 100;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 100;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.lights-1 {
+  display: block;
+  box-shadow: -3.5em 3.5em 0 0em #f1c40f, 3.5em 2.5em 0 0em #f1c40f,
+    -0.5em -9em 0 0 #f1c40f, 2em -4em 0 0 #f1c40f, -1em -5em 0 0 #f1c40f,
+    1em -8em 0 0 #f1c40f, -4em -1em 0 0 #f1c40f, 0em 5em 0 0 #f1c40f,
+    6em 5em 0 0 #f1c40f, 4em -1em 0 0 #f1c40f;
+  background: #f1c40f;
+  width: 0.5em;
+  height: 0.5em;
+  overflow: hidden;
+  border-radius: 1em;
+  margin-top: 5em;
+  margin-left: 2.5em;
+  position: absolute;
+  z-index: 100;
+  animation: lightswitch-f 5s infinite;
+  -webkit-animation: lightswitch-f 5s infinite;
+}
+
+.lights-2 {
+  display: block;
+  box-shadow: -3.5em 3.5em 0 0em #f1c40f, 3.5em 2.5em 0 0em #f1c40f,
+    -0.5em -9em 0 0 #f1c40f, 2em -4em 0 0 #f1c40f, -1em -5em 0 0 #f1c40f,
+    1em -8em 0 0 #f1c40f, -4em -1em 0 0 #f1c40f, 0em 5em 0 0 #f1c40f,
+    6em 5em 0 0 #f1c40f, 4em -1em 0 0 #f1c40f;
+  background: #f1c40f;
+  width: 0.5em;
+  height: 0.5em;
+  overflow: hidden;
+  border-radius: 1em;
+  margin-top: 4.8em;
+  margin-left: 2.9em;
+  position: absolute;
+  z-index: 100;
+  transform: rotate(224deg);
+  animation: lightswitch-s 5s infinite;
+  -webkit-animation: lightswitch-s 5s infinite;
+}
